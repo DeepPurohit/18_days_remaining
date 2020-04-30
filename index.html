@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANU</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .welcome {
+            height: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        
+        #type {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            font-size: 3em;
+        }
+
+        #button {
+            width: 50px;
+            height: 25px;
+            line-height: 25px;
+            border: 4px solid gray;
+            box-shadow: 10px 7px 5px #3b3b3b;
+
+        }
+    </style>
+
+
+<script type = "text/javascript">
+            function Redirect() {
+               window.location = "./home.html";
+            }            
+            setTimeout('Redirect()', 20000);
+
+</script>
+
+
+</head>
+<body>
+
+
+    <div class="welcome">
+        <section>
+            <p id="type"></p>
+        </section>
+        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/o2uJxdfDnR4?autoplay=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
+    <script type = "text/javascript">
+
+        window.onload=function(){
+            document.getElementById("my_audio").play();
+        }
+        var i = 0;
+        var txt = "Ab sirf 18 din bache haiiiiii ...... 😍😍😍😍😍😍❤️️❤️️❤️️❤️️❤️️❤️️❤️️❤️️";
+        var speed = 170;
+        var dis = true;
+        function type() {
+            document.getElementById("type").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(type,speed);
+            //    document.getElementsByClassName("welcome").style. = "none";
+        }
+        type();
+ 
+    </script>
+</body>
+</html>
