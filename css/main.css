@@ -43,10 +43,11 @@ html, body {
 .details p{
     padding: 1%;
 }
+
 h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
 }
